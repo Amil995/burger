@@ -1,0 +1,97 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    user-select: none; 
+    max-width: 1300px;
+    justify-content: center;
+}
+
+.container{
+    background-color:rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    max-width: 1300px;
+    width: 90%;
+    height: 700px;
+    justify-content: center;
+    position: relative;
+}
+.container .background{
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+}
+
+.container .header{
+    display: flex;
+    
+    margin-top: -600px;
+}
+.container .links{
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.container .links ul{
+    list-style: none;
+    font-size: 14px;
+    margin-top: 100px;
+    color:grey;
+    margin-left: 90px;
+}
+.container .links ul li{
+  padding:10px;
+}
+
+.img{
+    display: flex;
+}
+
+.header .links .burger > div{
+    width: 30px;
+    height: 3px;
+    background-color: grey;
+    margin: 0.3rem 0;
+    transition: 0.5s;
+}
+.header .links .img .burger{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.header .links .img .burger.active > div:nth-child(1){
+ transform: rotate(45deg) translate(0px, 10px);
+}
+.header .links .img .burger.burger.active > div:nth-child(2){
+    opacity:0;
+}
+.header .links .img .burger.burger.active > div:nth-child(3){
+    transform: rotate(-45deg) translate(0px, -11px);
+}
+
+
+.header .links .img .menu.menu.active > nav ul li{
+    visibility: visible;
+    transition: 0.5s;
+}
+.header .links .img .menu{
+    margin-top: 80px;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.header .links .img .menu ul li:hover{
+    cursor: pointer;
+    background-color: white;
+    color:red;
+    border-radius: 20px;
+}
+.header .links .img .menu ul li{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
